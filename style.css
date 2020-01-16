@@ -1,0 +1,96 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.big-title {
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.title-subtext {
+    font-size: 1.1em;
+    margin-top: 0;
+    text-align: center;
+}
+
+.output-container {
+    background-color: coral;
+    width: calc(100% - 100px);
+    margin: auto;
+    padding: 15px;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "heading heading heading"
+        "opt1    opt2    opt3"
+        ".       btn     clear";
+    border-radius: 15px;
+}
+
+.option-output {
+    position: relative;
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    height: 250px;
+    
+    margin: 8px;
+    padding: 5px;
+}
+
+.option-output:empty::after {
+    content: 'Option '  attr(data-num);
+    position: absolute;
+    left: 190px;
+    top: 110px;
+    font-size: 1.2em;
+    color: rgb(109, 108, 108);
+}
+
+
+.output-heading {
+    grid-area: heading;
+}
+
+.option1 {
+    grid-area: opt1;
+}
+
+.option2 {
+    grid-area: opt2;
+}
+
+.option3 {
+    grid-area: opt3;
+}
+
+.meal-btn {
+    width: 200px;
+    height: 50px;
+    grid-area: btn;
+    justify-self: center;
+}
+
+.clear-btn {
+    grid-area: clear;
+    width: 150px;
+    justify-self: right;
+}
+
+li:first-child {
+    font-size: 2.1em;
+    word-wrap: break-word;
+}
+
+li {
+    font-size: 1.7em;
+    word-wrap: break-word;
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(101, 101, 212);
+    color: white;
+}

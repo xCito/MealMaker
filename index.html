@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meal Maker</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="big-title">Meal Maker!</h1>
+            <h6 class="title-subtext">Get suggested meals options</h6>
+        </header>
+        <section class="output-container">
+            <h3 class="output-heading">Here are the top 3 options!</h3>
+            <div class="option1 option-output" id="opt1" data-num="1"></div>
+            <div class="option2 option-output" id="opt2" data-num="2"></div>
+            <div class="option3 option-output" id="opt3" data-num="3"></div>
+            <button class="meal-btn" onclick="createMeal()"> Choose a Meal </button>
+            <button class="clear-btn" onclick="clearMealOptions()"> Clear Options </button>
+        </section>
+        <script src="MealMaker.js"></script>
+    </body>
+</html>
