@@ -1,4 +1,7 @@
 // Dinner plan creator
+let = {
+    
+}
 
 let oneAndDoneMeals = [
     'Homemade Pizza',
@@ -37,7 +40,7 @@ let sides = [
     'Sweet Potato Fries',
     'Mushrooms',
     'Boiled Corn',
-    'Malango Mashed',
+    'Malanga Mashed',
     'Mashed Potatoes',
     'Berry Smoothie',
     'Banana Shake',
